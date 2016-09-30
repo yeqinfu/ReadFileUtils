@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+
+
+
+
+
+item name="android:paddingLeft">@dimen/qw_dip_10dp</item>
+        <item name="android:paddingRight">@dimen/qw_dip_10dp</item>
+	    <item name="android:paddingTop">@dimen/qw_dip_16dp</item>
+	    <item name="android:paddingBottom">@dimen/qw_dip_8dp</item>
+	    <item name="android:layout_width">@dimen/qw_dip_1dp</item>
+	    <item name="android:layout_width">@dimen/qw_dip_0.5dp</item>
+	    <item name="android:paddingBottom">@dimen/qw_dip_6dp</item>
+	    <item name="android:paddingTop">@dimen/qw_dip_6dp</item>
+	    <item name="android:layout_marginRight">@dimen/qw_dip_12dp</item>
+	    <item name="android:layout_marginLeft">@dimen/qw_dip_13dp</item>
+
+
+
+
+
+
+
+

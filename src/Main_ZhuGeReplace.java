@@ -9,10 +9,10 @@ import java.io.IOException;
  */
 public class Main_ZhuGeReplace {
 	// 文件路径
-	public static String filePath = "/home/yeqinfu/test";
+	public static String filePath = "/Users/yeqinfu/test.txt";
 
 	public static void main(String[] args) throws IOException {
-		checkFileByLine2(filePath);
+		checkFileByLine3(filePath);
 	}
 
 	/**
@@ -36,6 +36,8 @@ public class Main_ZhuGeReplace {
 		br.close();
 		fr.close();
 	}
+	
+	
 
 	/**
 	 * 读取每一行，中文会乱码 生成猪哥注入代码
@@ -55,7 +57,7 @@ public class Main_ZhuGeReplace {
 			if (!line.isEmpty()) {
 				line.replace("-", "_");
 				arrs = line.split("\\s+");
-				System.out.println("//TD 4.0  " + arrs[1]);
+				System.out.println("//TD 4.1.0  " + arrs[1]);
 				System.out.println(" Utils_Data.clickData(getContext(), ZhuGeIOStatistics." + arrs[0] + ", true);");
 				System.out.println();
 			}
@@ -63,5 +65,28 @@ public class Main_ZhuGeReplace {
 		br.close();
 		fr.close();
 	}
+	
+	/**
+	 * 读取每一行，中文会乱码 生成 properties
+	 * 
+	 * @param fileUrl
+	 * @throws IOException
+	 */
+	private static void checkFileByLine3(String fileUrl) throws IOException {
+		FileReader fr = new FileReader(fileUrl);
+		BufferedReader br = new BufferedReader(fr);
+		String line = "";
+		String[] arrs = null;
+		while ((line = br.readLine()) != null) {
+			if (!line.isEmpty()) {
+				line.replace("-", "_");
+				arrs = line.split("\\s+");
+				System.out.println(arrs[0] + "="  + arrs[1]);
+			}
+		}
+		br.close();
+		fr.close();
+	}
+
 
 }

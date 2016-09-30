@@ -14,7 +14,7 @@ import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
 public class Utils_XmlPraser {
-	static void checkXml(String fileUrl) throws DocumentException {
+	public static void checkXml(String fileUrl) throws DocumentException {
 		// 创建SAXReader对象
 		SAXReader reader = new SAXReader();
 		// 读取文件 转换成Document

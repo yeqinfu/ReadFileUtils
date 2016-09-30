@@ -12,7 +12,7 @@ public class Main {
 	public static void main(String[] args) {
 	//	String filePath="/home/yeqinfu/PharmPlus_Code/android/branches/android_libraries_v3.1.1/library_medicineCommon/res";
 	//	String filePath="/home/yeqinfu/PharmPlus_Code/android/branches/V3.1.1/res";
-		String filePath="/home/yeqinfu/PharmPlus_Code/android-store/branches/V3.1.1/res";
+		String filePath="/Users/yeqinfu/qw_code/android-store/branches/V4.0.2/res";
 
 		Utils_File.checkFileEndWith(filePath, ".xml");
 	}
